@@ -1,0 +1,27 @@
+<div class="container">
+  <p class="bg-primary">comp1 works!
+    <button class="" type="button" (click)="eventoBotonAngular()">Intercambiar</button>
+
+  </p>
+
+  <div class="row">
+    <div class="col-4 bg-success">
+      <app-comp4></app-comp4>
+    </div>
+    <div class="row">
+      <div class="col-8 bg-warning">
+        <div class="form-group">
+        <app-comp2 [propiedadHijo]="curso1"></app-comp2>
+        <input [(ngModel)]="curso1.nombre" class="form-control">{{contador}}
+      </div>
+      </div>
+
+      <div class="col-8 bg-danger">
+        <div class="form-group">
+        <app-comp3 [propiedadHijo]="curso2"></app-comp3>
+        <input [(ngModel)]="curso2.nombre " class="form-control">{{contador}}
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
